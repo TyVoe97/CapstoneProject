@@ -33,5 +33,9 @@ namespace CapstoneProject.Models
         public System.Data.Entity.DbSet<CapstoneProject.Models.Artist> Artists { get; set; }
 
         public System.Data.Entity.DbSet<CapstoneProject.Models.Customer> Customers { get; set; }
+
+        public System.Data.Entity.DbSet<CapstoneProject.Models.Profile> Profiles { get; set; }
+
+      
     }
 }

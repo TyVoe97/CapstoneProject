@@ -9,7 +9,8 @@ namespace CapstoneProject.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
             ContextKey = "CapstoneProject.Models.ApplicationDbContext";
         }
 
