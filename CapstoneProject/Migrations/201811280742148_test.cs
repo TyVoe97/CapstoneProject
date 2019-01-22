@@ -3,7 +3,7 @@ namespace CapstoneProject.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class profile : DbMigration
+    public partial class test : DbMigration
     {
         public override void Up()
         {

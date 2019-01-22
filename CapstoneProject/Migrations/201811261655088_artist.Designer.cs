@@ -7,18 +7,18 @@ namespace CapstoneProject.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class profileagain : IMigrationMetadata
+    public sealed partial class artist : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(profileagain));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(artist));
         
         string IMigrationMetadata.Id
         {
-            get { return "201811191718458_profile again"; }
+            get { return "201811261655088_artist"; }
         }
         
         string IMigrationMetadata.Source
         {
-            get { return null; }
+            get { return Resources.GetString("Source"); }
         }
         
         string IMigrationMetadata.Target

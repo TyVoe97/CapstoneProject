@@ -122,5 +122,9 @@ namespace CapstoneProject.Models
             }
             base.Dispose(disposing);
         }
+        public ActionResult Chat()
+        {
+            return View();
+        }
     }
 }

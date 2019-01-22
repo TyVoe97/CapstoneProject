@@ -7,13 +7,13 @@ namespace CapstoneProject.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class profile : IMigrationMetadata
+    public sealed partial class customer : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(profile));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(customer));
         
         string IMigrationMetadata.Id
         {
-            get { return "201811191704024_profile"; }
+            get { return "201811261704388_customer"; }
         }
         
         string IMigrationMetadata.Source

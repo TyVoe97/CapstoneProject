@@ -218,26 +218,21 @@
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\ProfilesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Hubs\ChatHub.cs" />
-    <Compile Include="Migrations\201811161451158_InitialCreate.cs" />
-    <Compile Include="Migrations\201811161451158_InitialCreate.Designer.cs">
-      <DependentUpon>201811161451158_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201811261655088_artist.cs" />
+    <Compile Include="Migrations\201811261655088_artist.Designer.cs">
+      <DependentUpon>201811261655088_artist.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811161511221_artist.cs" />
-    <Compile Include="Migrations\201811161511221_artist.Designer.cs">
-      <DependentUpon>201811161511221_artist.cs</DependentUpon>
+    <Compile Include="Migrations\201811261704388_customer.cs" />
+    <Compile Include="Migrations\201811261704388_customer.Designer.cs">
+      <DependentUpon>201811261704388_customer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811191704024_profile.cs" />
-    <Compile Include="Migrations\201811191704024_profile.Designer.cs">
-      <DependentUpon>201811191704024_profile.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811191718458_profile again.cs" />
-    <Compile Include="Migrations\201811191718458_profile again.Designer.cs">
-      <DependentUpon>201811191718458_profile again.cs</DependentUpon>
+    <Compile Include="Migrations\201811280742148_test.cs" />
+    <Compile Include="Migrations\201811280742148_test.Designer.cs">
+      <DependentUpon>201811280742148_test.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -245,11 +240,11 @@
     <Compile Include="Controllers\ArtistsController.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\Profile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\boostrap-Sketchy.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -263,6 +258,10 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Migrations\Shared\_Layout.cshtml" />
+    <Content Include="Migrations\Shared\_LoginPartial.cshtml" />
+    <Content Include="Migrations\Shared\Error.cshtml" />
+    <Content Include="Migrations\Shared\Lockout.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -276,7 +275,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -320,12 +321,9 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Customers\Edit.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
-    <Content Include="Views\Profiles\Create.cshtml" />
-    <Content Include="Views\Profiles\Delete.cshtml" />
-    <Content Include="Views\Profiles\Details.cshtml" />
-    <Content Include="Views\Profiles\Edit.cshtml" />
-    <Content Include="Views\Profiles\Index.cshtml" />
+    <Content Include="Views\Artists\Chat.cshtml" />
     <Content Include="Views\Home\Chat.cshtml" />
+    <Content Include="Views\Customers\Chat.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -344,17 +342,14 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201811161451158_InitialCreate.resx">
-      <DependentUpon>201811161451158_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201811261655088_artist.resx">
+      <DependentUpon>201811261655088_artist.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811161511221_artist.resx">
-      <DependentUpon>201811161511221_artist.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201811261704388_customer.resx">
+      <DependentUpon>201811261704388_customer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811191704024_profile.resx">
-      <DependentUpon>201811191704024_profile.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811191718458_profile again.resx">
-      <DependentUpon>201811191718458_profile again.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201811280742148_test.resx">
+      <DependentUpon>201811280742148_test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

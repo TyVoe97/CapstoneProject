@@ -14,6 +14,10 @@ namespace CapstoneProject.Models
         public string FirstName { get; set; }
         [Display(Name = " Last Name ")]
         public string LastName { get; set; }
+        [Display (Name = "Age")]
+        public int Age { get; set; }
+        [Display(Name = "Gender")]
+        public string Gender { get; set; }
         [Display(Name = " Email ")]
         public string Email { get; set; }
         public string Password { get; set; }
@@ -23,6 +27,8 @@ namespace CapstoneProject.Models
         public int ZipCode { get; set; }
         [Display(Name = " User Name ")]
         public string UserName { get; set; }
+        [Display(Name = "Bio")]
+        public string Biography { get; set; }
         
     }
     public class Customer
